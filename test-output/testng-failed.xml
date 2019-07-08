@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="3" name="Android emulator1(failed)" parallel="tests">
+    <parameter name="platformVersion" value="9"/>
+    <parameter name="udid" value="emulator-5554"/>
+    <parameter name="platform" value="android"/>
+    <parameter name="url" value="http://127.0.0.1:4723/wd/hub"/>
     <classes>
       <class name="com.appium.testcase.LoginTest">
         <methods>
           <include name="verify_loginfunctionality_for_valid_credentials"/>
+          <include name="PlanFinderParent"/>
+          <include name="initReport"/>
+          <include name="getReport"/>
+          <include name="afterClass"/>
           <include name="setup"/>
-          <include name="quitBrowser"/>
+          <include name="sendEmailableReport"/>
         </methods>
       </class> <!-- com.appium.testcase.LoginTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Android emulator1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  Test</title>
+<title>TestNG:  Android emulator1</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>Test</h2><table border='1' align="center">
+<h2 align='center'>Android emulator1</h2><table border='1' align="center">
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jun 20 17:33:44 IST 2019</td>
+<td>Started on:</td><td>Fri Jul 05 14:18:07 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18085 ms)</td>
+<tr><td>Total time:</td><td>25 seconds (25228 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.appium.testcase.LoginTest.verify_loginfunctionality_for_valid_credentials()'><b>verify_loginfunctionality_for_valid_credentials</b><br>Test class: com.appium.testcase.LoginTest<br>Test method: Valid Login scenario with valid username and password</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.appium.pages.LoginPage.signIn(LoginPage.java:46)
-	at com.appium.testcase.LoginTest.verify_loginfunctionality_for_valid_credentials(LoginTest.java:21)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace198112003", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace198112003'><pre>java.lang.NullPointerException
-	at com.appium.pages.LoginPage.signIn(LoginPage.java:46)
-	at com.appium.testcase.LoginTest.verify_loginfunctionality_for_valid_credentials(LoginTest.java:21)
+<td title='com.appium.testcase.LoginTest.verify_loginfunctionality_for_valid_credentials()'><b>verify_loginfunctionality_for_valid_credentials</b><br>Test class: com.appium.testcase.LoginTest</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at com.appium.testcase.LoginTest.verify_loginfunctionality_for_valid_credentials(LoginTest.java:34)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1488586559", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1488586559'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:568)
+	at org.testng.Assert.assertEquals(Assert.java:578)
+	at com.appium.testcase.LoginTest.verify_loginfunctionality_for_valid_credentials(LoginTest.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -96,21 +104,16 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>1</td>
-<td>com.appium.testcase.LoginTest@520a3426</td></tr>
+<td>6</td>
+<td>com.appium.testcase.LoginTest@6321e813</td></tr>
 </table><p>
 </body>
 </html>

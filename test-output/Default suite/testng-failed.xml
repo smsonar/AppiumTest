@@ -6,8 +6,12 @@
       <class name="com.appium.testcase.LoginTest">
         <methods>
           <include name="verify_loginfunctionality_for_valid_credentials"/>
+          <include name="PlanFinderParent"/>
+          <include name="initReport"/>
+          <include name="getReport"/>
+          <include name="afterClass"/>
           <include name="setup"/>
-          <include name="quitBrowser"/>
+          <include name="endTest"/>
         </methods>
       </class> <!-- com.appium.testcase.LoginTest -->
     </classes>
