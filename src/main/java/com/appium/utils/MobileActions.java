@@ -77,7 +77,7 @@ public class MobileActions extends BaseTest {
 	}
 
 	//Vertical Swipe by percentages
-	public void verticalSwipeByPercentages(double startPercentage, double endPercentage, double anchorPercentage) {
+	public void verticalSwipeByPercentages(double startPercentage, double endPercentage, double anchorPercentage) throws InterruptedException {
 		Dimension size = driver.manage().window().getSize();
 		int anchor = (int) (size.width * anchorPercentage);
 		int startPoint = (int) (size.height * startPercentage);

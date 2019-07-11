@@ -8,7 +8,7 @@
 		<parameter name="platformVersion" value="9" />
 		<parameter name="url" value="http://127.0.0.1:4723/wd/hub"></parameter>
 		<classes>
-			<class name="com.appium.testcase.LoginTest" />
+		    <class name ="com.appium.testcase.LoginTest"/>
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

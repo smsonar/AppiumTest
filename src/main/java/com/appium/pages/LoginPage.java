@@ -36,7 +36,7 @@ public class LoginPage extends BasePage {
 	public WebElement passwordInput;
 
 	@AndroidFindBy(id = "org.wordpress.android:id/nux_create_account_button")
-	public WebElement createAccountButton;
+	public WebElement createAccountLink;
 
 	@AndroidFindBy(id = "org.wordpress.android:id/nux_sign_in_button")
 	public MobileElement nextButton;
@@ -48,6 +48,10 @@ public class LoginPage extends BasePage {
 
 	@AndroidFindBy(id = "org.wordpress.android:id/nux_dialog_title")
 	public WebElement loginValidationMessage;
+	
+	@AndroidFindBy(id = "org.wordpress.android:id/info_button")
+	public WebElement infoButton;
+	
 
 	private static Logger log = Logger.getLogger(LoginPage.class.getClass());
 
@@ -63,7 +67,6 @@ public class LoginPage extends BasePage {
 	 * @throws InterruptedException
 	 */
 	public void signIn(String UserName, String Password, ExtentTest child) throws InterruptedException {
-		// mobileActions.verticalSwipeByPercentages(0.6, 0.3,0.5);
 		enterUserName(UserName);
 		child.log(LogStatus.INFO, "User has enterd UserName");
 		nextButton.click();
@@ -71,7 +74,7 @@ public class LoginPage extends BasePage {
 		enterPassword(Password);
 		child.log(LogStatus.INFO, "User has enterd password");
 		nextButton.click();
-		child.log(LogStatus.INFO, "User has clicke on Next Button");
+		child.log(LogStatus.INFO, "User has clicked on Next Button");
 	}
 
 	public void enterUserName(String UserName) {
@@ -87,4 +90,17 @@ public class LoginPage extends BasePage {
 		Utility.enterText(passwordInput, Password);
 		log.info("Enterd Password");
 	}
+	
+    public void redirectToApplcationLog() {
+    	Assert.assertTrue(infoButton.isDisplayed());
+    	Utility.clickButton(infoButton);
+    	log.info("clicked on infoButton");
+	}
+    
+    public void redirectoToCreateAccountScreen() {
+    	Assert.assertTrue(createAccountLink.isDisplayed());
+    	Utility.clickButton(createAccountLink);
+    	log.info("Redirected to Create Account screen");
+    }
+
 }

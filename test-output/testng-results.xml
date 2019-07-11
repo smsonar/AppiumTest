@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="25228" started-at="2019-07-05T08:48:07Z" finished-at="2019-07-05T08:48:32Z">
+  <suite name="Suite" duration-ms="18915" started-at="2019-07-11T06:17:53Z" finished-at="2019-07-11T06:18:12Z">
     <groups>
     </groups>
-    <test name="Android emulator1" duration-ms="25228" started-at="2019-07-05T08:48:07Z" finished-at="2019-07-05T08:48:32Z">
+    <test name="Android emulator1" duration-ms="18915" started-at="2019-07-11T06:17:53Z" finished-at="2019-07-11T06:18:12Z">
       <class name="com.appium.testcase.LoginTest">
-        <test-method status="PASS" signature="initReport()[pri:0, instance:com.appium.testcase.LoginTest@6321e813]" name="initReport" is-config="true" duration-ms="146" started-at="2019-07-05T08:48:07Z" finished-at="2019-07-05T08:48:07Z">
+        <test-method status="PASS" signature="initReport()[pri:0, instance:com.appium.testcase.LoginTest@49fc609f]" name="initReport" is-config="true" duration-ms="117" started-at="2019-07-11T06:17:53Z" finished-at="2019-07-11T06:17:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initReport -->
-        <test-method status="PASS" signature="PlanFinderParent()[pri:0, instance:com.appium.testcase.LoginTest@6321e813]" name="PlanFinderParent" is-config="true" duration-ms="2" started-at="2019-07-05T08:48:07Z" finished-at="2019-07-05T08:48:07Z">
+        <test-method status="PASS" signature="PlanFinderParent()[pri:0, instance:com.appium.testcase.LoginTest@49fc609f]" name="PlanFinderParent" is-config="true" duration-ms="2" started-at="2019-07-11T06:17:53Z" finished-at="2019-07-11T06:17:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PlanFinderParent -->
-        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.appium.testcase.LoginTest@6321e813]" name="setup" is-config="true" duration-ms="15851" started-at="2019-07-05T08:48:07Z" finished-at="2019-07-05T08:48:23Z">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.appium.testcase.LoginTest@49fc609f]" name="setup" is-config="true" duration-ms="12718" started-at="2019-07-11T06:17:53Z" finished-at="2019-07-11T06:18:06Z">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="verify_loginfunctionality_for_valid_credentials()[pri:0, instance:com.appium.testcase.LoginTest@6321e813]" name="verify_loginfunctionality_for_valid_credentials" duration-ms="6249" started-at="2019-07-05T08:48:23Z" finished-at="2019-07-05T08:48:29Z">
+        <test-method status="FAIL" signature="Verify_Login_Functionality_For_Valid_credentials()[pri:0, instance:com.appium.testcase.LoginTest@49fc609f]" name="Verify_Login_Functionality_For_Valid_credentials" duration-ms="4236" started-at="2019-07-11T06:18:06Z" finished-at="2019-07-11T06:18:10Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -54,7 +54,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:568)
 at org.testng.Assert.assertEquals(Assert.java:578)
-at com.appium.testcase.LoginTest.verify_loginfunctionality_for_valid_credentials(LoginTest.java:34)
+at com.appium.testcase.LoginTest.Verify_Login_Functionality_For_Valid_credentials(LoginTest.java:36)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -80,23 +80,23 @@ at java.lang.Thread.run(Unknown Source)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_loginfunctionality_for_valid_credentials -->
-        <test-method status="PASS" signature="getReport(org.testng.ITestResult)[pri:0, instance:com.appium.testcase.LoginTest@6321e813]" name="getReport" is-config="true" duration-ms="2298" started-at="2019-07-05T08:48:29Z" finished-at="2019-07-05T08:48:32Z">
+        </test-method> <!-- Verify_Login_Functionality_For_Valid_credentials -->
+        <test-method status="PASS" signature="getReport(org.testng.ITestResult)[pri:0, instance:com.appium.testcase.LoginTest@49fc609f]" name="getReport" is-config="true" duration-ms="1325" started-at="2019-07-11T06:18:10Z" finished-at="2019-07-11T06:18:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verify_loginfunctionality_for_valid_credentials status=FAILURE method=LoginTest.verify_loginfunctionality_for_valid_credentials()[pri:0, instance:com.appium.testcase.LoginTest@6321e813] output={null}]]]>
+                <![CDATA[[TestResult name=Verify_Login_Functionality_For_Valid_credentials status=FAILURE method=LoginTest.Verify_Login_Functionality_For_Valid_credentials()[pri:0, instance:com.appium.testcase.LoginTest@49fc609f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getReport -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.appium.testcase.LoginTest@6321e813]" name="afterClass" is-config="true" duration-ms="663" started-at="2019-07-05T08:48:32Z" finished-at="2019-07-05T08:48:32Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.appium.testcase.LoginTest@49fc609f]" name="afterClass" is-config="true" duration-ms="498" started-at="2019-07-11T06:18:11Z" finished-at="2019-07-11T06:18:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="sendEmailableReport()[pri:0, instance:com.appium.testcase.LoginTest@6321e813]" name="sendEmailableReport" is-config="true" duration-ms="1080" started-at="2019-07-05T08:48:32Z" finished-at="2019-07-05T08:48:34Z">
+        <test-method status="PASS" signature="sendEmailableReport()[pri:0, instance:com.appium.testcase.LoginTest@49fc609f]" name="sendEmailableReport" is-config="true" duration-ms="1309" started-at="2019-07-11T06:18:12Z" finished-at="2019-07-11T06:18:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendEmailableReport -->
