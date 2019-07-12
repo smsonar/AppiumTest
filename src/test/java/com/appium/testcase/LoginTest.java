@@ -39,23 +39,20 @@ public class LoginTest extends BaseTest {
 		Assert.assertEquals(true, false);
 	}
 
-	@Test()
-	public void Verify_Login_Functionality_For_InValid_credentials() throws InterruptedException {
-		child = report.startTest("Verify Login functaionality for Invalid credentials");
-		parent.appendChild(child);
-		loginpage = new LoginPage(getDriver());
-		loginpage.signIn(property.getProperty("username"), property.getProperty("password"), child);
-		Assert.assertEquals(false, false);
-	}
-
-	@Test()
-	public void verify_Application_Log_With_Vertical_Scroll() throws InterruptedException {
-		child = report.startTest("Verify application log");
-		parent.appendChild(child);
-		loginpage = new LoginPage(getDriver());
-		loginpage.redirectToApplcationLog();
-		helppage = new HelpPage(getDriver());
-		helppage.VerifyVerticalScroll();
-	}
+	/*
+	 * @Test() public void Verify_Login_Functionality_For_InValid_credentials()
+	 * throws InterruptedException { child =
+	 * report.startTest("Verify Login functaionality for Invalid credentials");
+	 * parent.appendChild(child); loginpage = new LoginPage(getDriver());
+	 * loginpage.signIn(property.getProperty("username"),
+	 * property.getProperty("password"), child); Assert.assertEquals(false, false);
+	 * }
+	 * 
+	 * @Test() public void verify_Application_Log_With_Vertical_Scroll() throws
+	 * InterruptedException { child = report.startTest("Verify application log");
+	 * parent.appendChild(child); loginpage = new LoginPage(getDriver());
+	 * loginpage.redirectToApplcationLog(); helppage = new HelpPage(getDriver());
+	 * helppage.VerifyVerticalScroll(); }
+	 */
 
 }
