@@ -11,8 +11,6 @@ SMTP_Host=mail.nitorinfotech.in
 SMTP_Port = 587
 SMTP_UserName=nit-appium@nitorinfotech.in
 SMTP_User_Password=p#Xg@4jZ89
-To_MailAddress = smsonar@gmail.com
+To_MailAddress = sagar.sonar@nitorinfotech.com
 To_Name = Sagar Sonar
-From_MailAddress =smsonar@gmail.com
-From_Name = Sagar Sonar
-
+From_MailAddress =nit-appium@nitorinfotech.in
