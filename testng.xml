@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests" thread-count="3">
 
-	<test name="Android emulator1">
+<suite name="Suite" parallel="tests" thread-count="3" verbose="10">
+	<test name="Android automation">
 		<parameter name="platform" value="android" />
 		<parameter name="udid" value="emulator-5554" />
 		<parameter name="platformVersion" value="9" />
-		<parameter name="url" value="http://127.0.0.1:4723/wd/hub"></parameter>
+		<parameter name="url" value="http://127.0.0.1:4723/wd/hub" />
 		<classes>
-		    <class name ="com.appium.testcase.LoginTest"/>
+			<class name="com.appium.testcase.LoginTest" />
+			<class name="com.appium.testcase.CreateAccountTest" />
 		</classes>
-	</test> <!-- Test -->
-</suite> <!-- Suite -->
+	</test>
+</suite>
