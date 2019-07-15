@@ -17,7 +17,7 @@ public class CreateAccountTest extends BaseTest{
 	LoginPage loginpage ;
     CreateAccountPage createaccountpage;
 	
-	@Test()
+	@Test(groups={"regression","smoke"})
 	public void Verify_Create_Account_Functaionlity_For_Valid_Inputfields() throws InterruptedException {
 		child = report.startTest("Verify create account functaionlity for valid input");
 		parent.appendChild(child);
@@ -31,7 +31,7 @@ public class CreateAccountTest extends BaseTest{
 		child.log(LogStatus.INFO, "New Account created successfully");
 	}
 	
-	@Test()
+	@Test(groups={"smoke"})
 	public void Verify_Create_Account_Functaionlity_For_InValid_Inputfields() throws InterruptedException {
 		child = report.startTest("Verify create account functaionlity for Invalid input");
 		parent.appendChild(child);
