@@ -30,7 +30,7 @@ public class LoginTest extends BaseTest {
 	LoginPage loginpage;
 	HelpPage helppage;
 
-	@Test(groups= {"regression","smoke"},priority=0)
+	@Test()
 	public void Verify_Login_Functionality_For_Valid_credentials() throws InterruptedException {
 		child = report.startTest("Verify Login functaionality for valid credentials");
 		parent.appendChild(child);
@@ -39,7 +39,7 @@ public class LoginTest extends BaseTest {
 		Assert.assertEquals(true, false);
 	}
 
-	@Test(groups={"regression","smoke"},priority=1)
+	@Test()
 	public void Verify_Login_Functionality_For_InValid_credentials() throws InterruptedException {
 		child = report.startTest("Verify Login functaionality for Invalid credentials");
 		parent.appendChild(child);
@@ -48,7 +48,7 @@ public class LoginTest extends BaseTest {
 		Assert.assertEquals(false, false);
 	}
 
-	@Test(groups= {"regression"})
+	@Test()
 	public void verify_Application_Log_With_Vertical_Scroll() throws InterruptedException {
 		child = report.startTest("Verify application log");
 		parent.appendChild(child);
