@@ -9,6 +9,7 @@
 		<parameter name="url" value="http://127.0.0.1:4723/wd/hub" />
 		<classes>
 			<class name="com.appium.testcase.LoginTest" />
+			<class name="com.appium.testcase.CreateAccountTest" />
 		</classes>
 	</test>
 </suite>
